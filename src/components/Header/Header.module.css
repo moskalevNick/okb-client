@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 92px;
+  background-color: aquamarine;
+  padding-left: 40px;
+}
+
+.wrapperSection {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 37%;
+  width: 122px;
+  height: 100%;
+  color: var(--input-placeholder-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--input-placeholder-color);
+  transition: all 0.4s;
+}
+
+.section:hover {
+  color: #1487f2;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.section:focus {
+  text-decoration: none;
+}
