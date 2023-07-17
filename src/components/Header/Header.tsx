@@ -18,7 +18,6 @@ export const Header = () => {
   const activeStyle = {
     fontWeight: '400',
     color: '#1487F2',
-    // borderBottom: '3px solid #1487F2',
     transition: 'all .2s',
   };
 

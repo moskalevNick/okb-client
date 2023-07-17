@@ -3,24 +3,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* padding-left: 74px; */
     padding-left: 3.85vw;
-    /* padding-bottom: 36px; */
     padding-bottom: 3.96vh;
-    /* height: 718px; */
-    /* height: 78.90vh; */
-    min-height: 718px;
-    background: url(../../resources/img/PortfolioPage.webp) center center/cover no-repeat;
+    height: 718px;
+    background: url(../../resources/img/LaboratoryPage.webp) center center/cover no-repeat;
     z-index: -1;
-    /* margin-bottom: 56px; */
     margin-bottom: 6.15vh;
 }
 
 .promoDescr {
-    /* font-size: 48px; */
     font-size: 5.27vh;
     font-weight: 400;
-    /* line-height: 58px; */
     line-height: 6.37vh;
     color: rgba(255, 255, 255, 1);
     z-index: 1;
@@ -41,11 +34,8 @@
 }
 
 .promoPossibilities {
-    /* font-size: 24px; */
     font-size: 2.64vh;
     font-weight: 400;
-    /* line-height: 30px; */
     line-height: 3.30vh;
-    /* padding: 0 44px 0 67px; */
     padding: 0 2.29vw 0 3.49vw;
 }

@@ -5,7 +5,6 @@ export const ContactsPage = () => {
     <>
     <div className={styles.promo}>
       <div className={styles.promoDescr}>
-        <span></span> <br />
         КАК С НАМИ СВЯЗАТЬСЯ
       </div>
       <div className={styles.promoRectangle}></div>

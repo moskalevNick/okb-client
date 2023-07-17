@@ -4,7 +4,7 @@
     display:  grid;
     /* grid-template-columns: 563px 301px; */
     /* grid-template-columns: 29.32vw 15.68vw; */
-    grid-template-columns: 29.32vw 17.68vw;
+    grid-template-columns: 29.32vw 18.68vw;
     justify-content: space-between;
     font-weight: 400;
     /* font-size: 24px; */
@@ -18,9 +18,7 @@
     /* grid-template-columns: 50px 496px; */
     /* grid-template-columns: 2.60vw 25.83vw; */
     /* grid-template-columns: 50px 500px; */
-    /* grid-template-columns: 2.60vw 26.04vw; */
-    grid-template-columns: 2.60vw 27.04vw;
-    /* column-gap: 17px; */
+    grid-template-columns: 2.60vw 29.04vw;
     column-gap: 0.89vw;
 }
 

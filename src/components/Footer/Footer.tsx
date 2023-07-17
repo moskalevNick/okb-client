@@ -7,9 +7,7 @@ import location from '../../resources/footer/location.svg'
 export const Footer = () => {
     const activeStyle = {
         fontWeight: '400',
-        // color: '#1487F2',
         color: 'rgba(75, 125, 62, 1)',
-        // borderBottom: '3px solid #1487F2',
         transition: 'all .2s',
       };
 
@@ -28,8 +26,6 @@ export const Footer = () => {
             </div>
             <div className={styles.wrapperContacts}>
                 Приёмная: <br />
-                {/* тел./ф. +375-17-343-33-60, <br />
-                тел. +375-17-358-18-31 <br /> */}
                 <a href="tel:+375173433360" className={styles.wrapperPhone}>тел./ф. +375-17-343-33-60,</a><br />
                 <a href="tel:+375173581831" className={styles.wrapperPhone}>тел. +375-17-358-18-31</a><br />
                 <NavLink
