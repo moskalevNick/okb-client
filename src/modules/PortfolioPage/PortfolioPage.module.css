@@ -1,0 +1,34 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 3.85vw;
+  padding-bottom: 3.96vh;
+  height: 718px;
+  background: url(../../resources/img/PortfolioPage.webp) center center/cover
+    no-repeat;
+  z-index: -1;
+}
+
+.promoDescr {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+.promoDescr span {
+  font-weight: 600;
+}
+
+.promoRectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
