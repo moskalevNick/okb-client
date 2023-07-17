@@ -5,11 +5,11 @@
   align-items: center;
   height: 96px;
   background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 1.04vw;
-  padding-right: 3.23vw;
-  padding-bottom: 1.32vh;
+  padding-left: 20px;
+  padding-right: 62px;
+  padding-bottom: 12px;
   margin-bottom: 96px;
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 1);
 }
 
 .wrapperLogo {
@@ -19,8 +19,8 @@
   width: 26.15vw;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
-  font-size: 2.64vh;
-  line-height: 3.30vh;
+  font-size: 24px;
+  line-height: 30px;
   text-decoration: none;
 }
 
@@ -50,8 +50,8 @@
   color: rgba(255, 255, 255, 1);
   font-style: normal;
   font-weight: 400;
-  font-size: 2.64vh;
-  line-height: 3.30vh;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .section {
@@ -59,7 +59,7 @@
   align-items: center;
   height: 100%;
   cursor: pointer;
-  line-height: 3.30vh;
+  line-height: 30px;
   text-decoration: none;
   color: var(--input-placeholder-color);
   transition: all 0.4s;
@@ -74,7 +74,6 @@
 .section:focus {
   text-decoration: none;
 }
-
 
 .subHeader {
   position: absolute;
@@ -132,8 +131,8 @@
   }
 } */
 
-
-.wrapperFirstHalf, .wrapperSecondHalf {
+.wrapperFirstHalf,
+.wrapperSecondHalf {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -154,8 +153,6 @@
   animation: ticker2 15s infinite linear forwards;
   /* animation: 20s ticker 10s infinite linear forwards; */
 }
-
-
 
 /* @keyframes ticker {
   0% {
@@ -189,4 +186,3 @@
     transform: translate(0, 0);
   }
 }
-
