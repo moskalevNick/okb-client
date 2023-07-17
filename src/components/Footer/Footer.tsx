@@ -20,7 +20,7 @@ export const Footer = () => {
                     <img src={location} alt="location" />
                 </div>
                 <div>
-                г. Минск, ул. А.К. Красина, д. 99, корп. 82 <br />
+                г. Минск, ул. Ак. Красина, д. 99, корп. 82 <br />
                 okb-acad@yandex.by <br />
                 Режим работы: Пн-пт: 8.30-17.00 <br />
                 Обед: 12.00-12.30

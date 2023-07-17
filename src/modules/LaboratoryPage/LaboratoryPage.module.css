@@ -8,7 +8,8 @@
     /* padding-bottom: 36px; */
     padding-bottom: 3.96vh;
     /* height: 718px; */
-    height: 78.90vh;
+    /* height: 78.90vh; */
+    min-height: 718px;
     background: url(../../resources/img/PortfolioPage.webp) center center/cover no-repeat;
     z-index: -1;
     /* margin-bottom: 56px; */

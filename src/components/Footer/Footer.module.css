@@ -3,7 +3,8 @@
     padding: 3.08vh 2.60vw 2.75vh 1.30vw;
     display:  grid;
     /* grid-template-columns: 563px 301px; */
-    grid-template-columns: 29.32vw 15.68vw;
+    /* grid-template-columns: 29.32vw 15.68vw; */
+    grid-template-columns: 29.32vw 17.68vw;
     justify-content: space-between;
     font-weight: 400;
     /* font-size: 24px; */

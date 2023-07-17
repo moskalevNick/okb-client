@@ -6,7 +6,8 @@
   /* width: 100%; */
   /* width: 100vw; */
   /* height: 96px; */
-  height: 10.55vh;
+  min-height: 96px;
+  /* height: 10.55vh; */
   background-color: rgba(0, 0, 0, 0.8);
   /* padding-left: 20px; */
   padding-left: 1.04vw;
@@ -14,8 +15,8 @@
   padding-right: 3.23vw;
   /* padding-bottom: 12px; */
   padding-bottom: 1.32vh;
-  /* margin-bottom: 96px; */
-  margin-bottom: 10.55vh;
+  margin-bottom: 96px;
+  /* margin-bottom: 10.55vh; */
   color: rgba(0, 0, 0, 1)
 }
 
@@ -95,11 +96,12 @@
 
 .subHeader {
   position: absolute;
-  /* top: 84px; */
-  top: 9.23vh;
+  top: 84px;
+  /* top: 9.23vh; */
   left: 0;
   /* height: 108px; */
-  height: 11.87vh;
+  min-height: 108px;
+  /* height: 11.87vh; */
   /* width: 1920px; */
   width: 100%;
   background-color: rgba(75, 125, 62, 0.8);
@@ -131,7 +133,8 @@
   align-items: center;
   position: absolute;
   /* top: 17px; */
-  top: 1.87vh;
+  /* top: 1.87vh; */
+  top: 18px;
   right: 0;
 
   animation: ticker 20s infinite linear forwards;
