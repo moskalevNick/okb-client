@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './App.module.css';
 import { HomePage } from './modules/HomePage/HomePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PortfolioPage } from './modules/PortfolioPage/PortfolioPage';
