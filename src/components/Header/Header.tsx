@@ -36,9 +36,9 @@ export const Header = () => {
         case 'laboratory':
           setActiveLink(2);
           break;
-        case 'gems':
-          setActiveLink(3);
-          break;
+        // case 'gems':
+        //   setActiveLink(3);
+        //   break;
         case 'vacancies':
           setActiveLink(4);
           break;
@@ -52,17 +52,23 @@ export const Header = () => {
 
   return (
     <div className={styles.wrapper}>
-      <NavLink
-        to='/'
-        end
-        className={styles.wrapperLogo}
-        onClick={() => {
-          setActiveLink(0);
-        }}
-      >
-        <img src={logonan} alt='logonan' />
-        <img src={logofull} alt='logofull' />
-      </NavLink>
+      <div className={styles.wrapperLogo}>
+        <NavLink
+          to='https://nasb.gov.by/rus/about/glavnaya/'
+          end
+        >
+          <img src={logonan} alt='logonan' />
+        </NavLink>
+        <NavLink
+          to='/'
+          end
+          onClick={() => {
+            setActiveLink(0);
+          }}
+        >
+          <img src={logofull} alt='logofull' />
+        </NavLink>
+      </div>
       <div className={styles.wrapperSection}>
         <NavLink
           to='/portfolio'
@@ -95,7 +101,7 @@ export const Header = () => {
         >
           ЛАБОРАТОРИЯ
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to='/gems'
           className={classNames(
             styles.section,
@@ -110,9 +116,25 @@ export const Header = () => {
           }}
         >
           АЛМАЗЫ
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to='/vacancies'
+          className={classNames(
+            styles.section,
+            activeLink === 3 && styles.activeSection,
+            isReverse && activeLink === 3 && styles.reverseAnimation
+          )}
+          onClick={() => {
+            if (activeLink > 3) {
+              setIsRevers(true);
+            } else setIsRevers(false);
+            setActiveLink(3);
+          }}
+        >
+          ВАКАНСИИ
+        </NavLink>
+        <NavLink
+          to='/contacts'
           className={classNames(
             styles.section,
             activeLink === 4 && styles.activeSection,
@@ -123,22 +145,6 @@ export const Header = () => {
               setIsRevers(true);
             } else setIsRevers(false);
             setActiveLink(4);
-          }}
-        >
-          ВАКАНСИИ
-        </NavLink>
-        <NavLink
-          to='/contacts'
-          className={classNames(
-            styles.section,
-            activeLink === 5 && styles.activeSection,
-            isReverse && activeLink === 5 && styles.reverseAnimation
-          )}
-          onClick={() => {
-            if (activeLink > 5) {
-              setIsRevers(true);
-            } else setIsRevers(false);
-            setActiveLink(5);
           }}
         >
           КОНТАКТЫ
