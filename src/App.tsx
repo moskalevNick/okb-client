@@ -19,6 +19,7 @@ function App() {
           {/* <Route path='/gems' element={<GemsPage />} /> */}
           <Route path='/vacancies' element={<VacanciesPage />} />
           <Route path='/contacts' element={<ContactsPage />} />
+          <Route path='*' element={<HomePage />} />
         </Route>
       </Routes>
     </BrowserRouter>
