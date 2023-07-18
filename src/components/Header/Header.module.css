@@ -18,6 +18,11 @@
   gap: 30px;
 }
 
+.wrapperLogo a {
+  display: flex;
+  align-items: center;
+}
+
 .wrapperSection {
   display: flex;
   justify-content: space-between;
