@@ -40,10 +40,10 @@ export const Header = () => {
         //   setActiveLink(3);
         //   break;
         case 'vacancies':
-          setActiveLink(4);
+          setActiveLink(3);
           break;
         case 'contacts':
-          setActiveLink(5);
+          setActiveLink(4);
           break;
         default:
           break;
