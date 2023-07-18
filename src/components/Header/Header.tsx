@@ -1,7 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import logonan from '../../resources/logo/logonan.svg';
 import logofull from '../../resources/logo/logofull.svg';
-import OKB from '../../resources/logo/OKB.svg';
 import peleng from '../../resources/subHeader/peleng.svg';
 import natrix from '../../resources/subHeader/Natrix.svg';
 import et from '../../resources/subHeader/et.svg';
@@ -62,13 +61,7 @@ export const Header = () => {
         }}
       >
         <img src={logonan} alt='logonan' />
-        <div className={styles.wrapperFull}>
-          <img src={logofull} alt='logofull' />
-          <div className={styles.wrapperOKB}>
-            <img src={OKB} alt='OKB' />
-            <span>Академическое</span>
-          </div>
-        </div>
+        <img src={logofull} alt='logofull' />
       </NavLink>
       <div className={styles.wrapperSection}>
         <NavLink

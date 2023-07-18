@@ -15,31 +15,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 26.15vw;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400;
-  font-size: 1.44vw;
-  line-height: 30px;
-  text-decoration: none;
-}
-
-.wrapperFull {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 18.59vw;
-}
-
-.wrapperOKB {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 14.58vw;
-}
-
-.wrapperOKB span {
-  display: inline;
-  width: 10.31vw;
 }
 
 .wrapperSection {
@@ -124,12 +99,12 @@
 }
 
 .wrapperFirstHalf {
-  animation: ticker1 15s infinite linear forwards;
+  animation: ticker1 50s infinite linear forwards;
 }
 
 .wrapperSecondHalf {
   transform: translate(100%, 0);
-  animation: ticker2 15s infinite linear forwards;
+  animation: ticker2 50s infinite linear forwards;
   /* animation: 20s ticker 10s infinite linear forwards; */
 }
 
@@ -178,7 +153,7 @@
 }
 
 .section:hover {
-  color: #2c9bfc;
+  color: rgba(75, 125, 62, 0.8);
   text-decoration: none;
   transition: all 0.4s;
 }
@@ -188,12 +163,10 @@
 }
 
 .activeSection:focus {
-  color: #adebff;
   transition: all 0.4s;
 }
 
 .activeSection {
-  color: #adebff;
   transition: all 0.4s;
 }
 
