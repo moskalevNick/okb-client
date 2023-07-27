@@ -1,15 +1,16 @@
-import {Swiper, SwiperSlide} from "swiper/react";
-import { Navigation, Autoplay, Pagination, Scrollbar, A11y, EffectCube } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import styles from './Slider.css';
+import styles from './Slider.module.css';
+import { slideType } from '../../../types/slide';
 
-export const Slider = ({ slides }) => {
+export const Slider = ({ slides }: { slides: slideType[] }) => {
   return (
-    <div className="swipWrap">
+    <div className={styles.swiperWrap}>
       <Swiper
         modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -22,17 +23,13 @@ export const Slider = ({ slides }) => {
           disableOnInteraction: false,
         }}
         scrollbar={{ draggable: true }}
-        hiddenClass='swiper-button-next'
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-              <img className={styles.slideImg} src={slide.photo} alt='photo'/>
+            <img className={styles.slideImg} src={slide.imgPath} alt='photo' />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-    
-    
-  )
-
-}
+  );
+};

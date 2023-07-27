@@ -1,5 +1,12 @@
-import {Swiper, SwiperSlide} from "swiper/react";
-import { Navigation, Autoplay, EffectFade, Pagination, Scrollbar, A11y, EffectCube } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Navigation,
+  Autoplay,
+  EffectFade,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -7,8 +14,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './SliderBanner.css';
+import { slideType } from '../../../types/slide';
 
-export const SliderBanner = ({ slides }) => {
+export const SliderBanner = ({ slides }: { slides: slideType[] }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay, EffectFade, Scrollbar, A11y]}
@@ -17,7 +25,7 @@ export const SliderBanner = ({ slides }) => {
       slidesPerView={1}
       loop={true}
       navigation={true}
-      watchSlidesVisibility={true}
+      // watchSlidesVisibility={true}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       autoplay={{
@@ -27,13 +35,12 @@ export const SliderBanner = ({ slides }) => {
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
-          {/* <div className="promoRectangle"><div className="promoIMG" style={{backgroundImage: `url(${slide.photo})`}}></div></div> */}
-          <div className="promoIMG" style={{backgroundImage: `url(${slide.photo})`}}></div>
-          {/* <div><img className={styles.slideImg} src={slide.photo} alt='photo'/></div> */}
+          <div
+            className='promoIMG'
+            style={{ backgroundImage: `url(${slide.imgPath})` }}
+          ></div>
         </SwiperSlide>
       ))}
-      {/* </div> */}
     </Swiper>
-  )
-
-}
+  );
+};
