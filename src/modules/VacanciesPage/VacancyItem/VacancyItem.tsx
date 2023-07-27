@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styles from './VacancyItem.module.css';
 import { VacancyType } from '../../../types/vacancy';
 
