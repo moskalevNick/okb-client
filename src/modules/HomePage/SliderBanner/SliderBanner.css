@@ -1,0 +1,37 @@
+
+.promoRectangle {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    left: 0; */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    z-index: 1;
+}
+
+.promoIMG {
+    width: 100%;
+    height: 100%;
+    background: center center/cover no-repeat;
+    filter: brightness(60%);
+}
+
+.swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(75, 125, 62, 1);
+}
+
+.swiper-pagination {
+    transition: 3000ms opacity;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 2px;
+}
+

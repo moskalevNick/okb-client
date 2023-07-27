@@ -32,3 +32,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
+
+.vacancies {
+  padding: 0 8.33vw 0 7.55vw;
+}

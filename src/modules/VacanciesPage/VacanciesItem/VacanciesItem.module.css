@@ -1,0 +1,50 @@
+.vacanciesItem {
+    margin-top: 44px;
+  }
+  
+  .vacanciesPosition {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  .vacanciesDepartment {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    margin-top: 22px;
+  }
+  
+  .vacanciesDescription {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 22px;
+  }
+  
+  .vacanciesDescription li {
+    margin-left: 33px;
+  }
+  
+  .vacanciesWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 31px;
+  }
+  
+  .vacanciesContact {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .vacanciesContact span {
+    font-weight: 700;
+  }
+  
+  .vacanciesSalary {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: end;
+  }

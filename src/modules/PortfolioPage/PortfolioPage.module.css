@@ -9,6 +9,7 @@
   background: url(../../resources/img/PortfolioPage.webp) center center/cover
     no-repeat;
   z-index: -1;
+  margin-bottom: 6.81vh;
 }
 
 .promoDescr {
@@ -31,4 +32,73 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
+}
+
+.executed {
+  padding: 0 2.55vw 0 3.18vw;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* .executedItem {
+  width: 100%;
+  height: 54.62vh;
+  background-size: 100% 100%;
+  padding: 8.90vh 3.44vw 8.90vh 3.65vw;
+  display: grid;
+  grid-template-columns: 21.72vw 1fr;
+  column-gap: 5.10vw;
+  margin-bottom: 62px;
+}
+
+.executedItemIMG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.executedItemName {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.executedItemBot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.executedItemBot span {
+  font-weight: 600;
+} */
+
+.possibilitiesTitle {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: rgba(75, 125, 62, 1);
+  padding: 0 3.18vw;
+  margin-top: 36px;
+  margin-bottom: 49px;
+}
+
+.possibilities {
+  padding: 0 6.35vw;
+  margin-bottom: 51px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.possibilities p {
+  font-size: 36px;
+  line-height: 43.88px;
+  text-align: center;
+}
+
+.possibilities .possibilitiesPleft {
+  margin-top: 29px;
+  text-align: start;
 }
