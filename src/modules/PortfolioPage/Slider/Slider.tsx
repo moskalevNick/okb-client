@@ -26,7 +26,11 @@ export const Slider = ({ slides }: { slides: slideType[] }) => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <img className={styles.slideImg} src={slide.imgPath} alt='photo' />
+            <img
+              className={styles.slideImg}
+              src={slide.imgPath}
+              alt={'portfolio image ' + slide.id}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
