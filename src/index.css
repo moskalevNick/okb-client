@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 
-
 * {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.swiper-button-prev {
+  color: transparent !important;
+  background-image: url(./resources/swiper/arrowPrev.svg) !important;
+  width: 33px !important;
+  height: 50px !important;
+}
 
-
+.swiper-button-next {
+  color: transparent !important;
+  background-image: url(./resources/swiper/arrowNext.svg) !important;
+  width: 33px !important;
+  height: 50px !important;
+}

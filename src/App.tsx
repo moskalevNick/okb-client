@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PortfolioPage } from './modules/PortfolioPage/PortfolioPage';
 import { LaboratoryPage } from './modules/LaboratoryPage/LaboratoryPage';
 // import { GemsPage } from './modules/GemsPage/GemsPage';
-import { VacanciesPage } from './modules/VacanciesPage/VacanciesPage';
+import { VacanciesPage } from './modules/VacanciesPage/VacancyPage';
 import { ContactsPage } from './modules/ContactsPage/ContactsPage';
 import { Layout } from './modules/Layout/Layout';
 
