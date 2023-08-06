@@ -2,24 +2,51 @@ import ProductsItem from './ProductsItem/ProductsItem';
 import { Slider } from './Slider/Slider';
 import photoSlide from '../../resources/portfolio/photo.webp';
 import styles from './PortfolioPage.module.css';
+import photo_1 from '../../resources/portfolio/portfolioSlides/photo_1.webp'
+import photo_2 from '../../resources/portfolio/portfolioSlides/photo_2.webp'
+import photo_3 from '../../resources/portfolio/portfolioSlides/photo_3.webp'
+import photo_4 from '../../resources/portfolio/portfolioSlides/photo_4.webp'
+import photo_5 from '../../resources/portfolio/portfolioSlides/photo_5.webp'
+import photo_6 from '../../resources/portfolio/portfolioSlides/photo_6.webp'
+import photo_7 from '../../resources/portfolio/portfolioSlides/photo_7.webp'
+import photo_8 from '../../resources/portfolio/portfolioSlides/photo_8.webp'
 
 export const PortfolioPage = () => {
-  const slides = [
+  const slides1 = [
     {
       id: 1,
-      imgPath: photoSlide,
+      imgPath: photo_1,
     },
     {
       id: 2,
-      imgPath: photoSlide,
+      imgPath: photo_2,
     },
     {
       id: 3,
-      imgPath: photoSlide,
+      imgPath: photo_3,
     },
     {
       id: 4,
-      imgPath: photoSlide,
+      imgPath:  photo_4,
+    },
+  ];
+
+  const slides2 = [
+    {
+      id: 1,
+      imgPath: photo_5,
+    },
+    {
+      id: 2,
+      imgPath: photo_6,
+    },
+    {
+      id: 3,
+      imgPath: photo_7,
+    },
+    {
+      id: 3,
+      imgPath: photo_8,
     },
   ];
 
@@ -44,7 +71,9 @@ export const PortfolioPage = () => {
           комплекса, нефтехимической, нефтеперерабатывающей, фармацевтической и
           пищевой промышленности.
         </p>
-        <Slider slides={slides} />
+        <div className={styles.slidesWrap}>
+          <Slider slides={slides1} />
+        </div>
         Технологическое оборудование для систем химической подготовки и
         дезактивации воды для атомных электрических станций (АЭС) (для БелАЭС);
         <br />
@@ -85,7 +114,9 @@ export const PortfolioPage = () => {
         <br />
         Ресиверы различных газов, объемом до 20м3 и рабочим давлением до 12 атм
         <p className={styles.possibilitiesPleft}>Насосы:</p>
-        <Slider slides={slides} />
+        <div className={styles.slidesWrap}>
+          <Slider slides={slides2} />
+        </div>
         консольные химические (НКХ) предназначены для перекачивания химически
         активных и нейтральных жидкостей плотностью не более 1850 кт/м3,
         вязкостью до 30*10-6 м2/с, содержащих твердые включения размером до 1

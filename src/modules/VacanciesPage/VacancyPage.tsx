@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useActions } from '../../hooks/useActions';
 import { VacancyType } from '../../types/vacancy';
+import { Loader } from '../../components/Loader/Loader';
 
 export const VacanciesPage = () => {
   const { vacancies, error, loading } = useTypedSelector(
@@ -18,14 +19,6 @@ export const VacanciesPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (loading) {
-    return <h1>Идет загрузка</h1>;
-  }
-
-  if (error) {
-    return <h1>{error}</h1>;
-  }
-
   return (
     <>
       <div className={styles.promo}>
@@ -36,6 +29,9 @@ export const VacanciesPage = () => {
         <div className={styles.promoRectangle}></div>
       </div>
       <div className={styles.vacancies}>
+        {/* {loading && <h1>Идет загрузка</h1>} */}
+        {loading && <Loader/>}
+        {error && <h1>{error}</h1>}
         {vacancies.map((vacancy: VacancyType) => (
           <VacancyItem vacancy={vacancy} key={vacancy.id} />
         ))}

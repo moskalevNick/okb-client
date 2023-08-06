@@ -10,7 +10,6 @@ import { slideType } from '../../../types/slide';
 
 export const Slider = ({ slides }: { slides: slideType[] }) => {
   return (
-    <div className={styles.swiperWrap}>
       <Swiper
         modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -23,6 +22,8 @@ export const Slider = ({ slides }: { slides: slideType[] }) => {
           disableOnInteraction: false,
         }}
         scrollbar={{ draggable: true }}
+        // className={styles.sliderPortfolio}
+        className='sliderPortfolio'
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -34,6 +35,5 @@ export const Slider = ({ slides }: { slides: slideType[] }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
   );
 };

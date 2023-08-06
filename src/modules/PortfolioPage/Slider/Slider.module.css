@@ -1,20 +1,21 @@
-.swipWrap {
-  margin: 45px 0 45px 0;
-  height: 430px;
-}
 
 .swiper {
   height: 100%;
   overflow: clip;
 }
 
+.vfgsgb {
+  height: 100%;
+}
+
 .swiper-slide {
   height: 100%;
 }
 
-.swiper-slide img {
+.slideImg {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .swiper-button-prev {

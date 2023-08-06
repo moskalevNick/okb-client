@@ -3,6 +3,7 @@ import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import styles from './ProductsItem.module.css';
 import { productType } from '../../../types/product';
+import { Loader } from '../../../components/Loader/Loader';
 
 const ProductsItem = () => {
   const { error, loading, products } = useTypedSelector(
@@ -16,13 +17,13 @@ const ProductsItem = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (loading) {
-    return <h1>Идет загрузка</h1>;
-  }
+  // if (loading) {
+  //   return <h1>Идет загрузка</h1>;
+  // }
 
-  if (error) {
-    return <h1>{error}</h1>;
-  }
+  // if (error) {
+  //   return <h1>{error}</h1>;
+  // }
 
   const findBg = (product: productType) => {
     let currenBackground = { backgroundImage: 'none' };
@@ -46,6 +47,10 @@ const ProductsItem = () => {
 
   return (
     <>
+      {/* {loading && <h1>Идет загрузка</h1>} */}
+      {loading && <Loader/>}
+      {error && <h1>{error}</h1>}
+      {/* {loading ? <h1>Идет загрузка</h1> : error ? <h1>{error}</h1> : products.map((product: productType) => */}
       {products.map((product: productType) =>
         product.image ? (
           <div key={product.id} className={styles.executedItem}>
