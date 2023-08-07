@@ -15,7 +15,7 @@ export const fetchProduct = () => {
     } catch (e) {
       dispatch({
         type: ProductActionTypes.FETCH_PRODUCT_ERROR,
-        payload: 'Произошла ошибка при загрузке вакансий',
+        payload: 'Произошла ошибка при загрузке продуктов',
       });
     }
   };

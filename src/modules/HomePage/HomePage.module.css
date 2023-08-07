@@ -15,7 +15,8 @@
 .promoDescr {
   position: absolute;
   left: 3.85vw;
-  bottom: 3.96vh;
+  /* bottom: 3.96vh; */
+  bottom: 6.593vh;
   font-size: 48px;
   font-weight: 400;
   line-height: 60px;

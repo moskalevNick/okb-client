@@ -9,6 +9,7 @@
   column-gap: 5.1vw;
   margin-bottom: 62px;
   z-index: -1;
+  color: rgba(255, 255, 255, 1);
 }
 
 .executedItemWrap {
@@ -36,7 +37,8 @@
 }
 
 .executedItemName {
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 5.275vh;
   font-weight: 600;
   z-index: 1;
   line-height: 60px;

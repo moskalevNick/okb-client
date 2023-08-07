@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 3.85vw;
-  padding-bottom: 3.96vh;
+  /* padding-bottom: 3.96vh; */
+  padding-bottom: 6.593vh;
   height: 78.9vh;
   background: url(../../resources/img/PortfolioPage.webp) center center/cover
     no-repeat;
@@ -34,12 +35,17 @@
   z-index: 0;
 }
 
+.slidesWrap {
+  height: 430px;
+  margin: 6.264vh 0 6.264vh 0;
+}
+
 .executed {
   padding: 0 2.55vw 0 3.18vw;
-  font-size: 24px;
+  font-size: 2.64vh;
   font-weight: 400;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 1);
+  line-height: 3.3vh;
+  /* color: rgba(255, 255, 255, 1); */
 }
 
 /* .executedItem {
@@ -87,13 +93,13 @@
 .possibilities {
   padding: 0 6.35vw;
   margin-bottom: 51px;
-  font-size: 24px;
+  font-size: 2.64vh;
   font-weight: 400;
   line-height: 30px;
 }
 
 .possibilities p {
-  font-size: 36px;
+  font-size: 3.956vh;
   line-height: 43.88px;
   text-align: center;
 }

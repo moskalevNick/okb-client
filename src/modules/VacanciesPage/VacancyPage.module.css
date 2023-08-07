@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 3.85vw;
-  padding-bottom: 3.96vh;
+  /* padding-bottom: 3.96vh; */
+  padding-bottom: 6.593vh;
   height: 78.9vh;
   background: url(../../resources/img/VacanciesPage.webp) center center/cover
     no-repeat;

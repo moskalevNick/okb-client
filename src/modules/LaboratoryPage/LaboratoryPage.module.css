@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 3.85vw;
-  padding-bottom: 3.96vh;
+  /* padding-bottom: 3.96vh; */
+  padding-bottom: 6.593vh;
   height: 78.9vh;
   background: url(../../resources/img/LaboratoryPage.webp) center center/cover
     no-repeat;
@@ -35,7 +36,7 @@
 }
 
 .promoPossibilities {
-  font-size: 24px;
+  font-size: 2.64vh;
   font-weight: 400;
   line-height: 40px;
   padding: 0 2.29vw 0 3.49vw;
