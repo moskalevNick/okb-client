@@ -17,14 +17,6 @@ const ProductsItem = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // if (loading) {
-  //   return <h1>Идет загрузка</h1>;
-  // }
-
-  // if (error) {
-  //   return <h1>{error}</h1>;
-  // }
-
   const findBg = (product: productType) => {
     let currenBackground = { backgroundImage: 'none' };
     product.image.forEach((image) => {
@@ -47,39 +39,39 @@ const ProductsItem = () => {
 
   return (
     <>
-      {/* {loading && <h1>Идет загрузка</h1>} */}
-      {loading && <Loader/>}
+      {loading && <Loader />}
       {error && <h1>{error}</h1>}
-      {/* {loading ? <h1>Идет загрузка</h1> : error ? <h1>{error}</h1> : products.map((product: productType) => */}
-      {products.map((product: productType) =>
-        product.image ? (
-          <div key={product.id} className={styles.executedItem}>
-            <div className={styles.executedBlur} style={findBg(product)}></div>
-            <img
-              src={findImg(product)}
-              alt='kolonnaMin'
-              className={styles.executedItemIMG}
-            />
-            <div className={styles.executedItemWrap}>
-              <span className={styles.executedItemName}>{product.name}</span>
-              <br />
-              {product.client}
-              <br />
-              <br />
-              {product.description}
-              <div className={styles.executedItemBot}>
-                <div>
-                  <span>Материалы:</span> {product.materials}
-                </div>
-                <div>
-                  <span>Сроки:</span> {product.time}
+      {products.map(
+        (product: productType) =>
+          product.image && (
+            <div key={product.id} className={styles.executedItem}>
+              <div
+                className={styles.executedBlur}
+                style={findBg(product)}
+              ></div>
+              <img
+                src={findImg(product)}
+                alt={`productImage_${product.id}`}
+                className={styles.executedItemIMG}
+              />
+              <div className={styles.executedItemWrap}>
+                <span className={styles.executedItemName}>{product.name}</span>
+                <br />
+                {product.client}
+                <br />
+                <br />
+                {product.description}
+                <div className={styles.executedItemBot}>
+                  <div>
+                    <span>Материалы:</span> {product.materials}
+                  </div>
+                  <div>
+                    <span>Сроки:</span> {product.time}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ) : (
-          <div key={'default'}>Идет загрузка</div>
-        )
+          )
       )}
     </>
   );

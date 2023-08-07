@@ -29,8 +29,7 @@ export const VacanciesPage = () => {
         <div className={styles.promoRectangle}></div>
       </div>
       <div className={styles.vacancies}>
-        {/* {loading && <h1>Идет загрузка</h1>} */}
-        {loading && <Loader/>}
+        {loading && <Loader />}
         {error && <h1>{error}</h1>}
         {vacancies.map((vacancy: VacancyType) => (
           <VacancyItem vacancy={vacancy} key={vacancy.id} />

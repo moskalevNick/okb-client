@@ -1,15 +1,14 @@
 import ProductsItem from './ProductsItem/ProductsItem';
 import { Slider } from './Slider/Slider';
-import photoSlide from '../../resources/portfolio/photo.webp';
 import styles from './PortfolioPage.module.css';
-import photo_1 from '../../resources/portfolio/portfolioSlides/photo_1.webp'
-import photo_2 from '../../resources/portfolio/portfolioSlides/photo_2.webp'
-import photo_3 from '../../resources/portfolio/portfolioSlides/photo_3.webp'
-import photo_4 from '../../resources/portfolio/portfolioSlides/photo_4.webp'
-import photo_5 from '../../resources/portfolio/portfolioSlides/photo_5.webp'
-import photo_6 from '../../resources/portfolio/portfolioSlides/photo_6.webp'
-import photo_7 from '../../resources/portfolio/portfolioSlides/photo_7.webp'
-import photo_8 from '../../resources/portfolio/portfolioSlides/photo_8.webp'
+import photo_1 from '../../resources/portfolio/portfolioSlides/photo_1.webp';
+import photo_2 from '../../resources/portfolio/portfolioSlides/photo_2.webp';
+import photo_3 from '../../resources/portfolio/portfolioSlides/photo_3.webp';
+import photo_4 from '../../resources/portfolio/portfolioSlides/photo_4.webp';
+import photo_5 from '../../resources/portfolio/portfolioSlides/photo_5.webp';
+import photo_6 from '../../resources/portfolio/portfolioSlides/photo_6.webp';
+import photo_7 from '../../resources/portfolio/portfolioSlides/photo_7.webp';
+import photo_8 from '../../resources/portfolio/portfolioSlides/photo_8.webp';
 
 export const PortfolioPage = () => {
   const slides1 = [
@@ -27,7 +26,7 @@ export const PortfolioPage = () => {
     },
     {
       id: 4,
-      imgPath:  photo_4,
+      imgPath: photo_4,
     },
   ];
 
