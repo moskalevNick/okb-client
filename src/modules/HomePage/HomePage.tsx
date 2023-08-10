@@ -6,6 +6,7 @@ import kolonnaPageIMG from '../../resources/img/KolonnaPage.webp';
 import { SliderBanner } from './SliderBanner/SliderBanner';
 
 export const HomePage = () => {
+
   const slides = [
     {
       id: 1,
@@ -40,5 +41,6 @@ export const HomePage = () => {
     //   <div className={styles.promoRectangle}></div>
     // </div>
     // </>
+    
   );
 };

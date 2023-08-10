@@ -1,7 +1,6 @@
 import { Dispatch } from 'redux';
 import axios from 'axios';
 import { ProductAction, ProductActionTypes } from '../../types/product';
-// import { VacancyAction, VacancyActionTypes } from "../../types/vacancy"
 
 export const fetchProduct = () => {
   return async (dispatch: Dispatch<ProductAction>) => {

@@ -1,0 +1,10 @@
+.partnreItem {
+    display:  grid;
+    grid-template-columns: 1fr minmax(auto, 144px);
+    align-items: center;
+    column-gap: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 1.82vw;
+    margin-top: 0.879vh;
+}
