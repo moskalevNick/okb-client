@@ -8,19 +8,11 @@ type PartnerItemType = {
 };
 
 const PartnerItem: React.FC<PartnerItemType> = ({ partner }) => {
-  let logo;
-  const fectlogo = async () => {
-    logo = await fetch(partner.logo.publicUrl, { method: 'get' });
-    return;
-  };
-  fectlogo();
   return (
-    <>
-      <div className={styles.partnreItem}>
-        {logo}
-        <div>{partner.text}</div>
-      </div>
-    </>
+    <div className={styles.partnreItem}>
+      <img src={partner.logo.publicUrl} alt={`partnerImage_${partner.id}`} />
+      <div>{partner.text}</div>
+    </div>
   );
 };
 
