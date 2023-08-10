@@ -39,12 +39,3 @@ export type VacancyAction =
   | FetchVacancySuccessAction
   | FetchVacancyErrorAction;
 
-// export interface Ivacancys {
-//     id: number;
-//     position: string;
-//     department:  string;
-//     description:  string;
-//     descriptionItem: [];
-//     contact:  string;
-//     salary:  string;
-// }

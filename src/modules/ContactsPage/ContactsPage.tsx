@@ -52,17 +52,6 @@ export const ContactsPage = () => {
             <br />
           </div>
           <div className={styles.promoPositions}>
-            <span>Отдел перспективных изделий и разработок:</span>
-            <br />
-            <i>Начальник отдела:</i>
-            <br />
-            Павлюкович Петр Александрович
-            <br />
-            <a href='tel:+375173572369' className={styles.wrapperPhone}>
-              тел. +375-17-357-23-69
-            </a>
-            <br />
-            <br />
             <span>Отдел бухгалтерского учёта и отчётности:</span>
             <br />
             <a href='tel:+375173779374' className={styles.wrapperPhone}>
@@ -72,7 +61,7 @@ export const ContactsPage = () => {
             <br />
             <span>Отдел технического контроля:</span>
             <br />
-            <i>И.о Начальник отдела:</i> <br />
+            <i>Начальник отдела:</i> <br />
             Андреева Татьяна Анатольевна
             <br />
             <a href='tel:+375173748826' className={styles.wrapperPhone}>

@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+
+
 .swiper-button-prev {
   color: transparent !important;
   background-image: url(./resources/swiper/arrowPrev.svg) !important;
@@ -21,6 +23,6 @@
   height: 50px !important;
 }
 
-.sliderPortfolio {
+/* .sliderPortfolio {
   height: 100%;
-}
+} */

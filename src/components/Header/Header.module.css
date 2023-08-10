@@ -41,23 +41,22 @@
   left: 0;
   height: 108px;
   width: 100%;
-  background-color: rgba(75, 125, 62, 0.8);
+  /* background-color: rgba(75, 125, 62, 0.8); */
   overflow: hidden;
   display: flex;
 }
 
-.subHeader div {
+/* .subHeader div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  /* transform: translate(100%, 0); */
   z-index: -1;
-}
+} */
 
-.subHeader div img {
+/* .subHeader div img {
   margin: 0 0.26vw 0 0.26vw;
-}
+} */
 
 /* .wrapperFirstHalf, .wrapperSecondHalf {
   display: flex;

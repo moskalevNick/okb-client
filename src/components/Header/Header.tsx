@@ -1,25 +1,32 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import logonan from '../../resources/logo/logonan.svg';
 import logofull from '../../resources/logo/logofull.svg';
-import peleng from '../../resources/subHeader/peleng.svg';
-import natrix from '../../resources/subHeader/Natrix.svg';
-import et from '../../resources/subHeader/et.svg';
-import naftuk from '../../resources/subHeader/naftuk.svg';
-import mnpz from '../../resources/subHeader/mnpz.svg';
-import belaES from '../../resources/subHeader/BelaES.svg';
-import belarusianneft from '../../resources/subHeader/Belarusianneft.svg';
-import integral from '../../resources/subHeader/integral.svg';
-import mogilevkhimvolokno from '../../resources/subHeader/mogilevkhimvolokno.svg';
+
+import PartnerItem from './PartnreItem/PartnerItem';
 
 import styles from './Header.module.css';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
+import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useActions } from '../../hooks/useActions';
+import { partnerType } from '../../types/partner';
+import { LoaderPartner } from '../LoaderPartner/LoaderPartner';
 
 export const Header = () => {
+
+  const {partner, error, loading} = useTypedSelector(state => state.partners)
+
+  const {fetchPartner} = useActions()
+
   const { pathname } = useLocation();
 
   const [activeLink, setActiveLink] = useState(0);
   const [isReverse, setIsRevers] = useState(true);
+
+  useEffect(() => {
+      fetchPartner()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     let mainPath = pathname.substring(1);
@@ -151,27 +158,18 @@ export const Header = () => {
         </NavLink>
       </div>
       <div className={styles.subHeader}>
+        {loading && <LoaderPartner />}
+        {error && <h1>{error}</h1>}
         <div className={styles.wrapperFirstHalf}>
-          <img src={peleng} alt='peleng' />
-          <img src={natrix} alt='natrix' />
-          <img src={et} alt='et' />
-          <img src={naftuk} alt='naftuk' />
-          <img src={mnpz} alt='mnpz' />
-          <img src={belaES} alt='belaES' />
-          <img src={belarusianneft} alt='belarusianneft' />
-          <img src={integral} alt='integral' />
-          <img src={mogilevkhimvolokno} alt='mogilevkhimvolokno' />
+          {partner.map((partner: partnerType) => 
+            <PartnerItem partner={partner} key={partner.id}/>
+          )}
+          
         </div>
         <div className={styles.wrapperSecondHalf}>
-          <img src={peleng} alt='peleng' />
-          <img src={natrix} alt='natrix' />
-          <img src={et} alt='et' />
-          <img src={naftuk} alt='naftuk' />
-          <img src={mnpz} alt='mnpz' />
-          <img src={belaES} alt='belaES' />
-          <img src={belarusianneft} alt='belarusianneft' />
-          <img src={integral} alt='integral' />
-          <img src={mogilevkhimvolokno} alt='mogilevkhimvolokno' />
+          {partner.map((partner: partnerType) => 
+            <PartnerItem partner={partner} key={partner.id}/>
+          )}
         </div>
       </div>
     </div>
