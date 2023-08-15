@@ -10,11 +10,10 @@ import { useEffect, useState } from 'react';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useActions } from '../../hooks/useActions';
 import { partnerType } from '../../types/partner';
-import { LoaderPartner } from '../LoaderPartner/LoaderPartner';
 
 export const Header = () => {
 
-  const {partner, error, loading} = useTypedSelector(state => state.partners)
+  const {partner, error} = useTypedSelector(state => state.partners)
 
   const {fetchPartner} = useActions()
 
@@ -158,8 +157,8 @@ export const Header = () => {
         </NavLink>
       </div>
       <div className={styles.subHeader}>
-        {loading && <LoaderPartner />}
         {error && <h1>{error}</h1>}
+        <div className={styles.subHeaderRectangle}></div>
         <div className={styles.wrapperFirstHalf}>
           {partner.map((partner: partnerType) => 
             <PartnerItem partner={partner} key={partner.id}/>
