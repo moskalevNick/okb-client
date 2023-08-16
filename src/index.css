@@ -23,6 +23,23 @@
   height: 50px !important;
 }
 
-/* .sliderPortfolio {
-  height: 100%;
-} */
+.PortfolioPage_slidesWrap__F66NS .swiper-button-next {
+  right: 30PX !important;
+}
+
+.PortfolioPage_slidesWrap__F66NS .swiper-button-prev {
+  left: 30PX !important;
+}
+
+.swiper-slide {
+  visibility: hidden !important;
+}
+
+.swiper-slide-active {
+  visibility: visible !important;
+}
+
+.swiper-slide-next {
+  visibility: visible !important;
+}
+

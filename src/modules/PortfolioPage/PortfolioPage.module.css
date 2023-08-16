@@ -82,7 +82,7 @@
 
 .possibilities {
   /* padding: 0 6.35vw; */
-  padding: 0 2.60vw;
+  /* padding: 0 2.60vw; */
   margin-bottom: 51px;
   font-size: 2.64vh;
   font-weight: 400;
@@ -97,21 +97,22 @@
   /* padding: 0 3.18vw; */
   margin-top: 36px;
   margin-bottom: 49px;
-  padding: 0 3.75vw;
+  padding: 0 3.18vw;
 }
 
 .possibilitiesDescr {
-  padding: 0 3.75vw;
+  padding: 0 6.35vw;
 }
 
 .possibilities p {
   font-size: 3.956vh;
   line-height: 43.88px;
   text-align: center;
-  padding: 0 3.75vw;
+  padding: 0 6.35vw;
 }
 
 .possibilities .possibilitiesPleft {
   margin-top: 29px;
+  padding: 0 6.35vw;
   text-align: start;
 }

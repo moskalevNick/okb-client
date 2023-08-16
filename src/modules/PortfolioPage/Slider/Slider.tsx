@@ -17,13 +17,12 @@ export const Slider = ({ slides }: { slides: slideType[] }) => {
         grabCursor={true}
         loop={true}
         navigation={true}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         scrollbar={{ draggable: true }}
         className={styles.sliderPortfolio}
-        // className='sliderPortfolio'
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}  className={styles.slide}>

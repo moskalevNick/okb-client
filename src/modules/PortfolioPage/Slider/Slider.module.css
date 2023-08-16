@@ -8,7 +8,8 @@
 .sliderPortfolio {
   height: 100% !important;
   /* padding: 0 6.39vw; */
-  padding: 0 70px;
+  /* padding: 0 70px; */
+  padding: 0 6.35vw;
 }
 
 .swiper-slide {
@@ -36,6 +37,12 @@
 }
 
 .slide{
-  padding: 0 30px;
+  /* padding: 0 30px; */
   /* width: 47.40vw; */
+  /* overflow: hidden !important; */
+  /* margin-right: 1.56vw; */
+}
+
+.slidesWrap .swiper-button-next {
+  left: 50px !important;
 }

@@ -157,7 +157,7 @@ export const Header = () => {
         </NavLink>
       </div>
       <div className={styles.subHeader}>
-        {error && <h1>{error}</h1>}
+        {error && <h1 style={{display: 'block', margin: "auto 0 auto 0"}}>{error}</h1>}
         <div className={styles.subHeaderRectangle}></div>
         <div className={styles.wrapperFirstHalf}>
           {partner.map((partner: partnerType) => 
