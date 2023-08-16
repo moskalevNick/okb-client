@@ -70,9 +70,9 @@ export const PortfolioPage = () => {
           комплекса, нефтехимической, нефтеперерабатывающей, фармацевтической и
           пищевой промышленности.
         </p>
-        <div className={styles.slidesWrap}>
+        <article className={styles.slidesWrap}>
           <Slider slides={slides1} />
-        </div>
+        </article>
         <div className={styles.possibilitiesDescr}>
           Технологическое оборудование для систем химической подготовки и
           дезактивации воды для атомных электрических станций (АЭС) (для БелАЭС);
@@ -115,9 +115,9 @@ export const PortfolioPage = () => {
           Ресиверы различных газов, объемом до 20м3 и рабочим давлением до 12 атм
         </div>
         <p className={styles.possibilitiesPleft}>Насосы:</p>
-        <div className={styles.slidesWrap}>
+        <article className={styles.slidesWrap}>
           <Slider slides={slides2} />
-        </div>
+        </article>
         <div className={styles.possibilitiesDescr}>
           консольные химические (НКХ) предназначены для перекачивания химически
           активных и нейтральных жидкостей плотностью не более 1850 кт/м3,
