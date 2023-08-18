@@ -155,6 +155,22 @@ export const Header = () => {
         >
           КОНТАКТЫ
         </NavLink>
+        <NavLink
+          to='/implementation'
+          className={classNames(
+            styles.section,
+            activeLink === 5 && styles.activeSection,
+            isReverse && activeLink === 5 && styles.reverseAnimation
+          )}
+          onClick={() => {
+            if (activeLink > 5) {
+              setIsRevers(true);
+            } else setIsRevers(false);
+            setActiveLink(5);
+          }}
+        >
+          РЕАЛИЗАЦИЯ
+        </NavLink>
       </div>
       <div className={styles.subHeader}>
         {error && <h1 style={{display: 'block', margin: "auto 0 auto 0"}}>{error}</h1>}

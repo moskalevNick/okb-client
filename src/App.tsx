@@ -7,6 +7,7 @@ import { LaboratoryPage } from './modules/LaboratoryPage/LaboratoryPage';
 import { VacanciesPage } from './modules/VacanciesPage/VacancyPage';
 import { ContactsPage } from './modules/ContactsPage/ContactsPage';
 import { Layout } from './modules/Layout/Layout';
+import ImplementationPage from './modules/ImplementationPage/ImplementationPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           {/* <Route path='/gems' element={<GemsPage />} /> */}
           <Route path='/vacancies' element={<VacanciesPage />} />
           <Route path='/contacts' element={<ContactsPage />} />
+          <Route path='/implementation' element={<ImplementationPage />} />
           <Route path='*' element={<HomePage />} />
         </Route>
       </Routes>
