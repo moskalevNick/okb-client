@@ -1,5 +1,9 @@
 import React from 'react';
 import  styles  from './ImplementationPage.module.css';
+import Capacity1 from '../../resources/Implementation/Capacity1.webp'
+import Capacity2 from '../../resources/Implementation/Capacity2.webp'
+import Capacity3 from '../../resources/Implementation/Capacity3.webp'
+import Capacity4 from '../../resources/Implementation/Capacity4.webp'
 
 const ImplementationPage = () => {
     return (
@@ -98,6 +102,68 @@ const ImplementationPage = () => {
             11. Сталлаж элеваторного типа СЕТ-3, инв.№ 0100398/5;<br />
             12. Сталлаж элеваторного типа СЕТ-3, инв.№ 0101665.<br />
             </p>
+            <br />
+            Перечень реализуемых инструментов:
+            <br />
+            <a 
+                href="Перечень реализуемого инструмента.docx" 
+                target="_blank" 
+                title="Перечень реализаумого инструмента"
+                download={"Перечень реализуемого инструмента.docx"}
+            >
+                Перечень реализуемого инструмента
+            </a>
+            <br />
+            <br />
+            Ёмкости и баки для реализации:
+            <br />
+            <br />
+            <div className={styles.implementationWrap}>
+                <div className={styles.implementationItem}>
+                    <div className={styles.implementationImg}><img src={Capacity1} alt="" /></div>
+                    <div className={styles.implementationDescr}>
+                        Название: Ёмкость<br />
+                        Материал изготовления: Сталь нержавеющая<br />
+                        Объём, м³: 1,25<br />
+                        Диаметр наружный, мм: 1000<br />
+                        Высота, мм: 1300<br />
+                        Толщина стенки, мм: 5
+                    </div>
+                </div>
+                <div className={styles.implementationItem}>
+                    <div className={styles.implementationImg}><img src={Capacity2} alt="" /></div>
+                    <div className={styles.implementationDescr}>
+                        Название: Ёмкость<br />
+                        Материал изготовления: Сталь нержавеющая<br />
+                        Объём, м³: 1,7<br />
+                        Диаметр наружный, мм: 1200<br />
+                        Высота, мм: 1500<br />
+                        Толщина стенки, мм: 6
+                    </div>
+                </div>
+                <div className={styles.implementationItem}>
+                    <div className={styles.implementationImg}><img src={Capacity3} alt="" /></div>
+                    <div className={styles.implementationDescr}>
+                        Название: Ёмкость<br />
+                        Материал изготовления: Сталь нержавеющая<br />
+                        Объём, м³: 3,2<br />
+                        Диаметр наружный, мм: 1600<br />
+                        Высота, мм: 2600<br />
+                        Толщина стенки, мм: 4
+                    </div>
+                </div>
+                <div className={styles.implementationItem}>
+                    <div className={styles.implementationImg}><img src={Capacity4} alt="" /></div>
+                    <div className={styles.implementationDescr}>
+                        Название: Ёмкость<br />
+                        Материал изготовления: Сталь нержавеющая<br />
+                        Объём, м³: 2<br />
+                        Диаметр наружный, мм: 1500<br />
+                        Высота, мм: 2000<br />
+                        Толщина стенки, мм: 5
+                    </div>
+                </div>
+            </div>
             <br />
             Аренда помещений:
             <br />

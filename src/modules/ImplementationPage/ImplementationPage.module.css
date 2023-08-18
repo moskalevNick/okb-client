@@ -45,3 +45,32 @@
   .promoPossibilities p {
     padding-left: 2.29vw;
   }
+
+  .promoPossibilities a {
+    text-decoration: none;
+    outline: none;
+  }
+
+  .implementationWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: space-around;
+  }
+
+  .implementationItem {
+    display: grid;
+    grid-template-rows: 430px 1fr;
+    row-gap: 15px;
+  }
+
+  .implementationImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .implementationImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
