@@ -7,10 +7,10 @@
     /* padding-bottom: 3.96vh; */
     padding-bottom: 6.593vh;
     height: 78.9vh;
-    background: url(../../resources/img/LaboratoryPage.webp) center center/cover
+    background: url(../../resources/img/ImplementationPage.webp) center center/cover
       no-repeat;
     z-index: -1;
-    margin-bottom: 6.15vh;
+    margin-bottom: 8.242vh;
   }
   
   .promoDescr {
@@ -36,41 +36,54 @@
   }
 
   .promoPossibilities {
-    font-size: 2.64vh;
-    font-weight: 400;
-    line-height: 40px;
-    padding: 0 2.29vw 0 3.49vw;
+    padding: 0 9.69vw;
+    margin-bottom: 8.242vh;
   }
 
-  .promoPossibilities p {
-    padding-left: 2.29vw;
-  }
-
-  .promoPossibilities a {
-    text-decoration: none;
-    outline: none;
-  }
-
-  .implementationWrap {
+  .possibilitiesWrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4.11vw;
+    grid-template-rows: 48.791vh;
+    grid-auto-rows: 48.791vh;
+    row-gap: 8.242vh;
   }
 
-  .implementationItem {
-    display: grid;
-    grid-template-rows: 430px 1fr;
-    row-gap: 15px;
-  }
-
-  .implementationImg {
+  .possibilitiesItem {
     width: 100%;
     height: 100%;
+    border-radius: 53px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.25);
+    padding: 3.846vh 0.42vw 3.846vh 0.55vw;
   }
 
-  .implementationImg img {
+  .possibilitiesTitle {
+    font-size: 2.637vh;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .possibilitiesImg {
+    height: 21.429vh;
+    width: 8.28vw;
+    margin: 0 auto;
+    margin-top: 1.758vh;
+  }
+
+  .possibilitiesImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  .possibilitiesDescr {
+    margin-top: 2.637vh;
+    font-size: 1.703vh;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  .possibilitiesDescr span {
+    font-weight: 600;
+  }
+  
