@@ -86,4 +86,93 @@
   .possibilitiesDescr span {
     font-weight: 600;
   }
+
+  .enumerationWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.06vw;
+    grid-template-rows: 48.791vh;
+    margin-top: 8.242vh;
+  }
+
+  .enumerationEquipment {
+    border-radius: 53px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.25);
+    padding: 4.615vh 1.46vw 6.044vh 1.46vw;
+  }
+
+  .enumerationTool {
+    position: relative;
+    border-radius: 53px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.25);
+    padding: 4.615vh 2.86vw 2.198vh 3.33vw;
+    overflow: hidden;
+  }
+
+  .enumerationGradient {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  }
+
+  .enumerationTitle {
+    font-size: 2.637vh;
+    font-weight: 700;
+    line-height: 3.297vh;
+    text-align: center;
+  }
+
+  .enumerationSubTitle {
+    margin-top: 2.198vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.538vh;
+    font-weight: 700;
+  }
+
+  .enumerationSubTitle span {
+    display: block;
+    padding-right: 3px;
+  }
+
+  .Equipment {
+    margin-top: 2.198vh;
+    font-size: 1.538vh;
+    font-weight: 400;
+    line-height: 2.418vh;
+  }
+
+  .Tool {
+    display: flex;
+    justify-content: space-between;
+    height: 34.264vh;
+    font-size: 1.538vh;
+    font-weight: 400;
+    line-height: 2.418vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(232, 232, 232, 1) #ffffff ;
+  }
+
+  .Tool::-webkit-scrollbar {
+    width: 0.63vw;
+  }
+
+  .Tool::-webkit-scrollbar-thumb {
+    width: 0.63vw;
+    background-color: rgba(232, 232, 232, 1);
+    border-radius: 40px
+  }
+
+  .quantity {
+    text-align: center;
+  }
+
+
+
+
+  
   
