@@ -57,7 +57,7 @@ const ImplementationPage = () => {
                     </div>
                 </div>
                 <div className={styles.possibilitiesItem}>
-                <div className={styles.possibilitiesTitle}>Емкость на раме</div>
+                    <div className={styles.possibilitiesTitle}>Емкость на раме</div>
                     <div className={styles.possibilitiesImg}>
                         <img src={Capacity4} alt="Capacity4" />
                     </div>
@@ -68,18 +68,6 @@ const ImplementationPage = () => {
                         <span>Высота, мм:</span> 2000; <br />
                         <span>Толщина стенки, мм:</span> 5; <br />
                     </div>
-                </div>
-                <div className={styles.possibilitiesItem}>
-
-                </div>
-                <div className={styles.possibilitiesItem}>
-
-                </div>
-                <div className={styles.possibilitiesItem}>
-
-                </div>
-                <div className={styles.possibilitiesItem}>
-
                 </div>
             </div>
             <div className={styles.enumerationWrap}>
