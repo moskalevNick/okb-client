@@ -14,14 +14,20 @@
 }
 
 .promoDescr {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 34px;
   color: rgba(255, 255, 255, 1);
   z-index: 1;
 }
 
+.promoDescr p {
+  margin-left: 15px;
+}
+
 .promoDescr span {
+  font-size: 48px;
+  line-height: 60px;
   font-weight: 600;
 }
 
@@ -36,8 +42,47 @@
 }
 
 .promoPossibilities {
-  font-size: 2.64vh;
+  /* font-size: 2.64vh; */
+  font-size: 18px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 24px;
   padding: 0 2.29vw 0 3.49vw;
+}
+
+.laboratoryEquipment {
+  width: 85.15vw;
+  margin: 0 auto;
+  margin-top: 4.835vh;
+  display: grid;
+  grid-template-columns: 45.39vw 36.64vw;
+  column-gap: 3.12vw;
+}
+
+.EquipmentWrap {
+  display: grid;
+  grid-template-rows: 7.253vh max-content;
+  row-gap: 1.868vh;
+}
+
+.EquipmentWrap ul {
+  margin-left: 3.12vw;
+}
+
+.EquipmentTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(75, 125, 62, 1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.laboratoryDescr {
+  width: 86.47vw;
+  margin: 0 auto;
+  margin-top: 4.835vh;
+  padding: 0 4.835vh;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 30px;
 }

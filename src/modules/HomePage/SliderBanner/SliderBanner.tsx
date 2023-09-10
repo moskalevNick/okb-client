@@ -38,7 +38,14 @@ export const SliderBanner = ({ slides }: { slides: slideType[] }) => {
           <div
             className='promoIMG'
             style={{ backgroundImage: `url(${slide.imgPath})` }}
-          ></div>
+          >
+            
+          </div>
+          <div className="promoDescr">
+            <span className="promoDescrTitle">{slide.title}</span> <br />
+            <span className="promoDescrSubTitle">{slide.subTitle}</span> <br />
+            <span>{slide.descr}</span>
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>

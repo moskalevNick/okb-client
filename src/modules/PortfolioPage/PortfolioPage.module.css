@@ -90,29 +90,36 @@
 }
 
 .possibilitiesTitle {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
   color: rgba(75, 125, 62, 1);
-  /* padding: 0 3.18vw; */
   margin-top: 36px;
-  margin-bottom: 49px;
-  padding: 0 3.18vw;
-}
-
-.possibilitiesDescr {
-  padding: 0 6.35vw;
+  padding: 0 4.37vw 0 5.48vw;
 }
 
 .possibilities p {
-  font-size: 3.956vh;
-  line-height: 43.88px;
-  text-align: center;
-  padding: 0 6.35vw;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0 4.37vw 0 5.48vw;
+  margin-top: 2.747vh;
 }
 
-.possibilities .possibilitiesPleft {
-  margin-top: 29px;
-  padding: 0 6.35vw;
-  text-align: start;
+.possibilitiesDescr {
+  margin-top: 2.198vh;
+  padding: 0 4.37vw 0 5.48vw;
+}
+
+.possibilitiesDescr ul {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-left: 1.94vw;
+}
+
+.possibilitiesDescr span {
+  display: block;
+  font-style: italic;
+  margin-top: 2.198vh;
 }
