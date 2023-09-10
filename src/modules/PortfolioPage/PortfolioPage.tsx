@@ -69,8 +69,8 @@ export const PortfolioPage = () => {
     <>
       <div className={styles.promo}>
         <div className={styles.promoDescr}>
-          <span>НАШИ ЗАКАЗЫ</span> <br />
-          ЗАКАЗ ДЛЯ ЗАКАЗЧИКА “ЗАКАЗЧИК”
+          <span>ПОРТФОЛИО</span> <br />
+          Выполненные заказы и возможности предприятия
         </div>
         <div className={styles.promoRectangle}></div>
       </div>
