@@ -79,7 +79,11 @@ export const ContactsPage = () => {
             </a>
             <br />
             <br />
-            Адрес:г. Минск, ул. Ак. Красина, д. 99, корп. 82
+            <span>Отдел главного сварщика:</span>
+            <br />
+            <i>Начальник отдела:</i> <br />
+            Кузьмицкая Анастасия Алексеевна
+            <br />
           </div>
         </div>
         <div className={styles.promoEmail}>
