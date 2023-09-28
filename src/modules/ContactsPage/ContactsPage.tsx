@@ -84,6 +84,9 @@ export const ContactsPage = () => {
             <i>Начальник отдела:</i> <br />
             Кузьмицкая Анастасия Алексеевна
             <br />
+            <a href='tel:+375173641364' className={styles.wrapperPhone}>
+              т. +375-17-375-86-18
+            </a>
           </div>
         </div>
         <div className={styles.promoEmail}>
